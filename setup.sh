@@ -1,6 +1,6 @@
 #!/bin/bash
 function CEKIP () {
-ipsaya=$(wget -qO- ifconfig.me)
+ipsaya=$(wget -qO- ipv4.icanhazip.com)
 MYIP=$(curl -sS ipv4.icanhazip.com)
 IPVPS=$(curl -sS https://raw.githubusercontent.com/ndhet/permission/main/ip | grep $MYIP | awk '{print $4}')
 if [[ $MYIP == $IPVPS ]]; then
